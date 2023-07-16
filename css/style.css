@@ -21,19 +21,23 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 
 nav li a{
-	margin-left: 30px;
+	margin-left: 1.875rem;
 	text-decoration: none;
 	font-size: 1rem;
 	font-weight: 500;
 	color: #424242;
 }
 
+
+/* Banner */
+
+
 .banner{
-	padding: 40px 0;
+	padding: 2.5rem 0;
 	text-align: center;
 }
 
@@ -66,7 +70,7 @@ nav li a{
 	border-radius: 6px;
 	padding: 0.75rem 1.5rem;
 	background: #FF900E;
-	margin: 20px 0 40px 0;
+	margin: 1.25rem 0 2.5rem 0;
 }
 
 .banner img{
@@ -74,8 +78,11 @@ nav li a{
 }
 
 
+/* Team */
+
+
 .team{
-	padding: 50px 0;
+	padding: 3.125rem 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -84,7 +91,7 @@ nav li a{
 .team .team-img {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
+	gap: 1.25rem;
 	width: 45%;
 }
 
@@ -114,8 +121,11 @@ nav li a{
 }
 
 
+/* Feature */
+
+
 .feature {
-	padding: 50px 0;
+	padding: 3.125rem 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -128,20 +138,20 @@ nav li a{
 
 .feature h2{
 	border-left: 5px solid #FF900E;
-	padding-left: 20px;
-	margin-bottom: 15px;
+	padding-left: 1.25rem;
+	margin-bottom: 1rem;
 }
 
 .feature .left .box{
 	border-radius: 6px;
 	background: #fff;
-	padding: 25px;
+	padding: 1.5625rem;
 	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 	margin: 20px 0;
 }
 
 .feature .left .box h5{
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 600;
 	color: #131313;
 }
@@ -159,7 +169,7 @@ nav li a{
 	background: #FF900E;
 	color: #fff;
 	width: 35%;
-	padding: 30px;
+	padding: 1.875rem;
 	border-radius: 6px;
 	text-align: center;
 	font-size: 2.5rem;
@@ -175,54 +185,58 @@ nav li a{
 }
 
 
+/* Fact */
+
 
 .fact {
-	padding: 50px 0;
+	padding: 3.125rem 0;
 }
 
 .fact-container{
 	display: flex;
 	justify-content: space-around;
-	margin-top: 60px;
+	margin-top: 3.75rem;
 }
 
 .fact-box{
 	text-align: center;
 	background: white;
 	border: 1px solid #FF900E;
-	border-radius: 6px;
-	padding: 30px 30px;
+	border-radius: 0.375rem;
+	padding: 1.875rem;
 }
 
 .fact-box img{
-	width: 45px;
-	height: 45px;
+	width: 2.75rem;
+	height: 2.75rem;
 }
 
 .fact-box h3{
-	font-size: 35px;
+	font-size: 2.25rem;
 	font-weight: 600;
 	color: #424242;
-	margin: 5px 0;
+	margin: 0.375rem 0;
 }
 
 .fact-box h6{
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 500;
 	color: #727272;
 }
 
 
+/* Sponsor */
+
 
 .sponsor {
-	padding: 50px 0;
+	padding: 3.125rem 0;
 	text-align: center;
 }
 
 .sponsor-container {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 30px;
+	margin-top: 1.875rem;
 }
 
 .sponsor-container img{
@@ -235,15 +249,77 @@ nav li a{
 
 
 footer{
-	padding: 50px 0 120px 0;
+	padding: 3.125rem 0 7.5rem 0;
 	text-align: center;
 }
 
 footer div{
-	padding: 25px 0;
+	padding: 1.5625rem 0;
 	width: 100%;
 	background: #FFF4E7;
-	border-radius: 7px;
-	font-size: 16px;
+	border-radius: 0.375rem;
+	font-size: 1rem;
 	color: #424242;
+}
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 900px) {
+	.container{
+		max-width: 90%;
+		margin: auto;
+	}	
+	.feature {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	.feature .left,
+	.feature .right{
+		width: 100%;
+	}
+	.feature .right img{
+		margin-left: 0;
+	}
+}
+
+
+@media screen  and (max-width: 576px) {
+		nav{
+		flex-direction: column;
+		gap: 15px;
+	}
+	.team,
+	.feature{
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	.team .team-img,
+	.team .team-content,
+	.feature .left,
+	.feature .right{
+		width: 100%;
+	}
+	.feature .right img{
+		margin-left: 0;
+	}
+	.feature .right .box{
+		left: 0rem;
+	}
+	.fact-container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2.5rem;
+	}
+	.sponsor br{
+		display: none;
+	}
+	.sponsor-container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 40px;
+	}
+
 }
