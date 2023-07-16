@@ -4,5 +4,71 @@
   font-family: 'Work Sans', sans-serif;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
+.container{
+	max-width: 1100px;
+	margin: auto;
+}
+
+header{
+  background: #FFF4E7;
+  min-height: 100vh;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+nav li a{
+	margin-left: 30px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 500;
+	color: #424242;
+}
+
+.banner{
+	padding: 40px 0;
+	text-align: center;
+}
+
+.banner h2{
+	font-size: 3rem;
+	font-weight: 700;
+	color: #131313;
+	line-height: 1.2em;
+}
+
+.banner p{
+	font-size: 1rem;
+	font-weight: 400;
+	color: #727272;
+	line-height: 1.4em;
+	margin-top: 0.625rem;
+}
+
+.banner button{
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.5em;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	padding: 0.75rem 1.5rem;
+	background: #FF900E;
+	margin: 20px 0 40px 0;
+}
+
+.banner img{
+	width: 100%;
+}
+
+
+.features{
+	
+}
