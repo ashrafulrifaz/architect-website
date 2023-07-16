@@ -46,7 +46,8 @@ nav li a{
 
 .banner p,
 .team p,
-.feature p{
+.feature p,
+.fact p{
 	font-size: 1rem;
 	font-weight: 400;
 	color: #727272;
@@ -95,7 +96,8 @@ nav li a{
 }
 
 .team h2,
-.feature h2{
+.feature h2,
+.fact h2{
 	font-size: 2.5rem;
 	color: #131313;
 	font-weight: 600;
@@ -114,16 +116,64 @@ nav li a{
 	padding: 50px 0;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .feature .left{
 	width: 47%;
 	gap: 10px;
 }
+
+.feature h2{
+	border-left: 5px solid #FF900E;
+	padding-left: 20px;
+	margin-bottom: 15px;
+}
+
+.feature .left .box{
+	border-radius: 6px;
+	background: #fff;
+	padding: 25px;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+	margin: 20px 0;
+}
+
+.feature .left .box h5{
+	font-size: 18px;
+	font-weight: 600;
+	color: #131313;
+}
+
 .feature .right{
 	width: 45%;
 }
 
 .feature .right img{
 	width: 100%;
+	margin-left: 4.5rem;
+}
+
+.feature .right .box{
+	background: #FF900E;
+	color: #fff;
+	width: 35%;
+	padding: 30px;
+	border-radius: 6px;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 600;
+	line-height: 0.75em;
+	position: relative;
+	bottom: 4rem;
+}
+
+.feature .right .box span{
+	font-size: 1.125rem;
+	font-weight: 400;
+}
+
+
+
+.fact {
+	padding: 50px 0;
 }
