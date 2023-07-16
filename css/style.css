@@ -44,7 +44,9 @@ nav li a{
 	line-height: 1.2em;
 }
 
-.banner p{
+.banner p,
+.team p,
+.feature p{
 	font-size: 1rem;
 	font-weight: 400;
 	color: #727272;
@@ -52,7 +54,8 @@ nav li a{
 	margin-top: 0.625rem;
 }
 
-.banner button{
+.banner button,
+.team button{
 	font-size: 0.875rem;
 	font-weight: 600;
 	line-height: 1.5em;
@@ -69,6 +72,58 @@ nav li a{
 }
 
 
-.features{
-	
+.team{
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.team .team-img {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	width: 45%;
+}
+
+.team img{
+	width: 100%;
+}
+
+.team .team-content{
+	width: 45%;
+}
+
+.team h2,
+.feature h2{
+	font-size: 2.5rem;
+	color: #131313;
+	font-weight: 600;
+}
+
+.team h2 span:first-child{
+	color: #727272;
+}
+
+.team h2 span:last-child{
+	color: #FF900E;
+}
+
+
+.feature {
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.feature .left{
+	width: 47%;
+	gap: 10px;
+}
+.feature .right{
+	width: 45%;
+}
+
+.feature .right img{
+	width: 100%;
 }
