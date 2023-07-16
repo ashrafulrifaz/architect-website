@@ -47,7 +47,8 @@ nav li a{
 .banner p,
 .team p,
 .feature p,
-.fact p{
+.fact p,
+.sponsor p{
 	font-size: 1rem;
 	font-weight: 400;
 	color: #727272;
@@ -97,7 +98,8 @@ nav li a{
 
 .team h2,
 .feature h2,
-.fact h2{
+.fact h2,
+.sponsor h2{
 	font-size: 2.5rem;
 	color: #131313;
 	font-weight: 600;
@@ -208,4 +210,40 @@ nav li a{
 	font-size: 16px;
 	font-weight: 500;
 	color: #727272;
+}
+
+
+
+.sponsor {
+	padding: 50px 0;
+	text-align: center;
+}
+
+.sponsor-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.sponsor-container img{
+	mix-blend-mode: luminosity;
+}
+
+
+
+/* Footer */
+
+
+footer{
+	padding: 50px 0 120px 0;
+	text-align: center;
+}
+
+footer div{
+	padding: 25px 0;
+	width: 100%;
+	background: #FFF4E7;
+	border-radius: 7px;
+	font-size: 16px;
+	color: #424242;
 }
